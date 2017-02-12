@@ -4,8 +4,10 @@
 class http_server{
 public:
 	void start(char *ip,char *port); //服务器启动
-	void stop(); //服务器停止
+	void run();// 运行，接收来自客户端的请求
+
 private:
+	void response(int clnt_sock);
 
 };
 
